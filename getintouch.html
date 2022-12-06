@@ -1,0 +1,170 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        body {
+            font-size: 20px;
+            font-weight: 400;
+            padding: 0 20px;
+
+        }
+
+        a {
+            text-decoration: none;
+            color: #FED049;
+        }
+
+
+        .main-header {
+            background-color: green;
+            color: white;
+            padding: 15px;
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+        }
+
+        .logo {
+            text-decoration: none;
+            font-size: 30px;
+            font-weight: 700;
+
+        }
+
+        .logo-first-word {
+            color: white;
+        }
+
+        .logo-second-word {
+            color: #FED049;
+        }
+
+        .menu-items {
+            list-style: none;
+        }
+
+        .menu-item {
+            display: inline-block;
+            margin-left: 10px;
+        }
+
+        .menu-link {
+            color: white;
+            text-decoration: none;
+            font-size: 18px;
+            font-weight: 600;
+            text-transform: capitalize;
+        }
+        .main-footer {
+            background-color: rgb(7, 70, 23);
+            color: white;
+            text-align: center;
+            padding: 15px;
+        }
+
+        .form-section {
+            width: 80%;
+            margin:20px auto;
+        }
+
+        form {
+            background-color: rgb(100, 131, 107);
+            padding: 40px;
+        }
+
+        form label {
+            display: block;
+            margin: 10px 0;
+            width: 100%;
+        }
+        form input {
+            height: 40px;
+        }
+
+        form textarea {
+            height: 55px;
+        }
+        form input, form textarea {
+            display: block;
+            width: 100%;
+            font-size: 18px;
+            padding: 8px;
+            border: none;
+            outline: 0;
+            border-radius: 15px;
+
+        }
+
+        form button {
+            display: block;
+            width: 100%;
+            font-size: 18px;
+            padding: 15px 10px;
+            background-color: green;
+            color: white;
+            border: none;
+            outline: 0;
+            border-radius: 15px;
+        }
+        </style>
+</head>
+<body>
+    <header class="main-header">
+        <div>
+            <a href="#" class="logo"><span class="logo-first-word">Health</span>
+                <span class="logo-second-word">Essentials</span></a>
+        </div>
+        <div>
+            <nav class="navigation-bar">
+                <ul class="menu-items">
+                    <li class="menu-item"> <a href="#" class="menu-link">Home</a></li>
+                    <li class="menu-item"> <a href="#" class="menu-link">Tips</a></li>
+                    <li class="menu-item"> <a href="#" class="menu-link">Get in Touch</a></li>
+                    <li class="menu-item"> <a href="#" class="menu-link">Email Us</a></li>
+                </ul>
+            </nav>
+        </div>
+    </header>
+
+    <main>
+        <section class="form-section">
+            <form method="POST" >
+                <h1>Get In Touch</h1>
+                <h2>Use the contact form below to get in touch</h2>
+
+                <label for="name">
+                    Name
+                    <input type="text" name="name" id="name" placeholder="Full Name" />
+                </label>
+                <label for="email">
+                    Email
+                    <input type="email" name="email" id="email" placeholder="Email" />
+                </label>
+                <label for="website">
+                    Website
+                    <input type="text" name="website" id="website" placeholder="Website" />
+                </label>
+                <label for="subject">
+                   Subject
+                    <input type="text" name="subject" id="subject" placeholder="Subject" />
+                </label>
+                <label for="message">
+                   Message
+                    <textarea name="message" id="message" placeholder="Type your message here" ></textarea>
+                </label>
+
+                <button type="submit">Send Away!</button>
+
+            </form>
+        </section>
+    </main>
+
+    <footer class="main-footer">
+        <p>Copyright @ 2022 Health Essentials. All Rights Reserved</p>
+    </footer>
+</body>
+</html>
